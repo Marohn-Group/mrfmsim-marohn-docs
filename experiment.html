@@ -1,0 +1,1036 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Experiment &#8212; MrfmSim-Marohn 0.1.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Trapezoid Integration" href="simulation.html" />
+    <link rel="prev" title="Theory" href="theory.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">MrfmSim-Marohn 0.1.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting Started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="readme.html">
+   MrfmSim-Marohn
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Experimental Setup
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/sample.html">
+   Sample
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/grid.html">
+   Grid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/magnet.html">
+   Magnet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/cantilever.html">
+   Cantilever
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Theory and Experiments
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="theory.html">
+   Theory
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Experiment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="simulation.html">
+   Trapezoid Integration
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Units
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="units.html">
+   Units
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="develop.html">
+   Development notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tests.html">
+   Tests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="license.html">
+   License
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acknowlegements.html">
+   Acknowledgements
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/experiment.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experiment-protocol-spin-noise">
+   Experiment Protocol: Spin Noise
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experiment-protocol-frequency-shift">
+   Experiment Protocol: Frequency shift
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#small-amplitude-limit-large-tip">
+     Small amplitude limit (large tip)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#large-amplitude-limit-small-tip">
+     Large amplitude limit (small tip)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reference">
+   Reference
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-mrfmsim_marohn.experiment">
+   <code class="xref py py-mod docutils literal notranslate">
+    <span class="pre">
+     experiment
+    </span>
+   </code>
+   module
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Experiment</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experiment-protocol-spin-noise">
+   Experiment Protocol: Spin Noise
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experiment-protocol-frequency-shift">
+   Experiment Protocol: Frequency shift
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#small-amplitude-limit-large-tip">
+     Small amplitude limit (large tip)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#large-amplitude-limit-small-tip">
+     Large amplitude limit (small tip)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reference">
+   Reference
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-mrfmsim_marohn.experiment">
+   <code class="xref py py-mod docutils literal notranslate">
+    <span class="pre">
+     experiment
+    </span>
+   </code>
+   module
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="experiment">
+<h1>Experiment<a class="headerlink" href="#experiment" title="Permalink to this headline">#</a></h1>
+<p><strong>single spin:</strong></p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_singlespin</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+</tbody>
+</table>
+<p>See how experiments are tested:
+<a class="reference internal" href="tests.html#tests-experimental-section"><span class="std std-ref">experiment tests</span></a></p>
+<section id="experiment-protocol-spin-noise">
+<h2>Experiment Protocol: Spin Noise<a class="headerlink" href="#experiment-protocol-spin-noise" title="Permalink to this headline">#</a></h2>
+<p>In this package we implement in Python the protocol outlined in the supporting
+information of Longenecker <a class="footnote-reference brackets" href="#longenecker2012oct" id="id1">12</a> for determining the
+small-ensemble force variance signal in a cyclic modulation NMR-MRFM
+experiment.</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.ibmcyclic</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="theory.html#mrfmsim_marohn.formula.polarization.rel_dpol_arp_ibm" title="mrfmsim_marohn.formula.polarization.rel_dpol_arp_ibm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.formula.polarization.rel_dpol_arp_ibm</span></code></a>(...)</p></td>
+<td><p>Relative change in polarization for IBM adiabatic rapid passage.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="experiment-protocol-frequency-shift">
+<h2>Experiment Protocol: Frequency shift<a class="headerlink" href="#experiment-protocol-frequency-shift" title="Permalink to this headline">#</a></h2>
+<p>In Garner <em>et al.</em> <a class="footnote-reference brackets" href="#garner2004jun" id="id2">1</a> and Moore <em>et al.</em> <a class="footnote-reference brackets" href="#moore2009dec" id="id3">2</a>
+experiments, spin magnetization interacted with the second derivative of a
+magnetic field to produce a change in the cantilever’s <em>frequency</em> of
+oscillation. This approach to detecting magnetic resonance was termed the
+CERMIT protocol, which stands for Cantilever-Enabled Readout of Magnetization
+Inversion Transients.</p>
+<p>In the Garner experiment <a class="footnote-reference brackets" href="#garner2004jun" id="id4">1</a>, nuclear spin magnetization was
+inverted once using a swept-frequency adiabatic rapid passage, and the
+resulting step-change in the cantilever frequency indicated nuclear spin
+resonance (NMR). In the Moore experiment <a class="footnote-reference brackets" href="#moore2009dec" id="id5">2</a>, electron spin
+magnetization was modulated slowly, by switching the spin-saturating
+microwaves on and off periodically. The cantilever oscillation was digitized
+and sent to a (software) frequency demodulator. The resulting
+frequency-versus-time data was fed to a (software) lock-in detector, operated
+with the microwave modulation trigger as the reference signal. A change in the
+lock-in output indicated electron spin resonance (ESR).</p>
+<p>To observe a change in the cantilever frequency, the cantilever in these
+experiments were driven into self-oscillation. In the presence of the tip field
+gradient, the motion of the cantilever led to a dithering of the resonance
+frequency of the spins in the sample. In the Moore experiment <a class="footnote-reference brackets" href="#moore2009dec" id="id6">2</a>,
+microwave irradiation was applied at a fixed frequency and this dithering was
+used to sweep out a region of saturated electron spins below the tip. In the
+Garner experiment <a class="footnote-reference brackets" href="#garner2004jun" id="id7">1</a>, in contrast, the region of inverted
+magnetization swept out by the dithering of the tip was much smaller than the
+region of inverted spin magnetization created by sweeping the frequency of the
+applied radio frequency field.</p>
+<p>In experiments like these involving a driven cantilever, the observed
+frequency shift depends on the amplitude of the cantilever oscillation and
+different equations are needed to calculate the spin signal in small-amplitude
+and large-amplitude limits. A unified set of equations describing
+frequency-shift experiments were derived from first principles <a class="footnote-reference brackets" href="#lee2012apra" id="id8">4</a>;
+those results are summarized below.</p>
+<p>In this package we implement in Python the protocol for calculating the
+dc-NMR-CERMIT signal outlined in the Garner <em>et al.</em> manuscript
+<a class="footnote-reference brackets" href="#garner2004jun" id="id9">1</a> and the protocol for calculating the ac-ESR-CERMIT signal
+outlined in the supporting information of the Moore <em>et al.</em> manuscript
+<a class="footnote-reference brackets" href="#moore2009dec" id="id10">2</a>.</p>
+<section id="small-amplitude-limit-large-tip">
+<h3>Small amplitude limit (large tip)<a class="headerlink" href="#small-amplitude-limit-large-tip" title="Permalink to this headline">#</a></h3>
+<p>In the small-amplitude limit, we can calculate the spin-dependent frequency
+shift experienced by the cantilever using</p>
+<div class="math notranslate nohighlight" id="equation-eq-largetipdf">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-largetipdf" title="Permalink to this equation">#</a></span>\[\Delta f = - \frac{f}{2 k} \sum_j \mu_z(\vec{r}_j)
+    \frac{\partial^{\, 2} B_z^{\mathrm{tip}}( \vec{r}_j )}{\partial x^2}\]</div>
+<p>where <span class="math notranslate nohighlight">\(f \: [\mathrm{Hz}]\)</span> is the cantilever resonance frequency and
+<span class="math notranslate nohighlight">\(k \: [\mathrm{N} \: \mathrm{m}^{-1}]\)</span> is the cantilever spring
+constant. The direction of the applied magnetic field is the <span class="math notranslate nohighlight">\(z\)</span> and the
+direction of the cantilever motion is <span class="math notranslate nohighlight">\(x\)</span>. In equation <a class="reference internal" href="#equation-eq-largetipdf">(1)</a>,
+<span class="math notranslate nohighlight">\(\mu_z \: [\mathrm{N} \: \mathrm{m} \: \mathrm{T}^{-1}]\)</span> is the <span class="math notranslate nohighlight">\(z\)</span>
+component of the spin magnetic moment, and <span class="math notranslate nohighlight">\(B_z^{\mathrm{tip}} \:
+[\mathrm{T}]\)</span> is the <span class="math notranslate nohighlight">\(z\)</span> component of the magnetic field produced by the
+cantilever’s magnetic tip. The sum represents a sum over all spins in
+resonance (discussed below). The frequency shift arises from a spring constant
+shift of</p>
+<div class="math notranslate nohighlight" id="equation-eq-largetipdk">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-largetipdk" title="Permalink to this equation">#</a></span>\[\Delta k = - \sum_j \mu_z(\vec{r}_j)
+    \frac{\partial^{\, 2} B_z^{\mathrm{tip}}( \vec{r}_j )}{\partial x^2}\]</div>
+<p>Equations <a class="reference internal" href="#equation-eq-largetipdf">(1)</a> and <a class="reference internal" href="#equation-eq-largetipdk">(2)</a> are valid when the
+zero-to-peak amplitude of the cantilever oscillation is much smaller than the
+distance between the center of the (spherical) magnet and the sample spins
+<a class="footnote-reference brackets" href="#lee2012apra" id="id11">4</a>.</p>
+<p>In the ESR-CERMIT experiment of Moore <em>et al.</em>, the magnetization distribution
+<span class="math notranslate nohighlight">\(\mu_z (\vec{r})\)</span> depends, according to the steady-state Bloch
+equations, on the frequency <span class="math notranslate nohighlight">\(f_{\mathrm{rf}}\)</span> and strength <span class="math notranslate nohighlight">\(B_1\)</span>
+of the microwave field, the sample relaxation times <span class="math notranslate nohighlight">\(T_1\)</span> and <span class="math notranslate nohighlight">\(T_2\)</span>
+, the sample spin density, the applied magnetic field <span class="math notranslate nohighlight">\(B_0\)</span>, the tip
+magnetic field <span class="math notranslate nohighlight">\(B_z^{\mathrm{tip}}\)</span>, and cantilever position.  In the
+Moore experiment, the cantilever sweeps out a region of saturated
+magnetization as it moves.</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="theory.html#mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate" title="mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate</span></code></a>(...)</p></td>
+<td><p>Relative change in polarization for steady-state.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Assuming a stationary tip, an approximation can be made for the ESR experiment (Michael Boucher):</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_stationarytip</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="theory.html#mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate" title="mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate</span></code></a>(...)</p></td>
+<td><p>Relative change in polarization for steady-state.</p></td>
+</tr>
+</tbody>
+</table>
+<p>In the NMR-CERMIT experiment of Garner <em>et al.</em>,
+the frequency of the applied radio frequency field <span class="math notranslate nohighlight">\(f_{\mathrm{rf}}\)</span> is
+swept. The initial magnetization follows the effective field at each location
+in the sample, resulting in a region of inverted magnetization below the tip.</p>
+<p><a class="reference internal" href="theory.html#theory-arp-section"><span class="std std-ref">Adiabatic Rapid Passage</span></a> experiment:</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitarp</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="theory.html#mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate" title="mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate</span></code></a>(...)</p></td>
+<td><p>Relative change in polarization for steady-state.</p></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="theory.html#theory-nutation-section"><span class="std std-ref">Nutation</span></a> experiments also implemented:</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitnut</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="theory.html#mrfmsim_marohn.formula.polarization.rel_dpol_nut" title="mrfmsim_marohn.formula.polarization.rel_dpol_nut"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.formula.polarization.rel_dpol_nut</span></code></a>(...)</p></td>
+<td><p>Relative change in polarization under the evolution of irradiation.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="large-amplitude-limit-small-tip">
+<h3>Large amplitude limit (small tip)<a class="headerlink" href="#large-amplitude-limit-small-tip" title="Permalink to this headline">#</a></h3>
+<p>The small-amplitude approximation used to derive the above equations may not
+be valid in a small-tip ESR-CERMIT experiment <a class="footnote-reference brackets" href="#lee2012apra" id="id12">4</a>. In this case we
+must calculate the signal using Equation 20 <a class="footnote-reference brackets" href="#lee2012apra" id="id13">4</a> <a class="footnote-reference brackets" href="#lee2012note" id="id14">5</a>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-smalltipdf">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eq-smalltipdf" title="Permalink to this equation">#</a></span>\[\Delta f = \frac{f}{2 \pi k x_{\mathrm{pk}}^2}
+    \sum_j \int_{-\pi}^{\pi} \mu_z(\vec{r}_j,\theta)
+        \frac{\partial B_z^{\mathrm{tip}}(x - x_{\mathrm{pk}}
+        \cos{\theta},y,z)}{\partial x}
+        x_{\mathrm{pk}} \cos{\theta} d\theta\]</div>
+<p>where <span class="math notranslate nohighlight">\(x_{\mathrm{pk}}\)</span> is the zero-to-peak amplitude of the cantilever
+oscillation. We write <span class="math notranslate nohighlight">\(\mu_z(\vec{r}_j,\theta)\)</span> to indicate that, if the
+microwaves are left on during cantilever motion, then the magnetization may
+vary in syncrony with the cantilever oscillation. In the i-OSCAR experiment of
+Rugar and coworkers <a class="footnote-reference brackets" href="#rugar2004jul" id="id15">6</a>, the resulting position-dependent change
+in magnetization led to a measurable freqency shift.</p>
+<p>Equation <a class="reference internal" href="#equation-eq-smalltipdf">(3)</a> is exact.  To understand the nature of the
+large-tip approximation, Eq. <a class="reference internal" href="#equation-eq-largetipdf">(1)</a>, let us expand the Eq.
+<a class="reference internal" href="#equation-eq-smalltipdf">(3)</a> gradient in the <span class="math notranslate nohighlight">\(x\)</span> variable:</p>
+<div class="math notranslate nohighlight" id="equation-eq-expansion">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eq-expansion" title="Permalink to this equation">#</a></span>\[\frac{\partial B_z^{\mathrm{tip}}(x - x_{\mathrm{pk}} \cos{\theta},y,z)}
+{\partial x} \approx \frac{\partial B_z^{\mathrm{tip}}(x,y,z)}{\partial x}
+- x_{\mathrm{pk}} \cos{\theta} \frac{\partial^2 B_z^{\mathrm{tip}}(x,y,z)}
+{\partial x^2} + {\cal O}(x_{\mathrm{pk}}^2)\]</div>
+<p>In calculating the signal from our ESR-CERMIT experiment we will assume for
+simplicity that the spin distribution <span class="math notranslate nohighlight">\(\mu_z(\vec{r}_j)\)</span> has reached
+steady-state; we neglect any change in the magnetization during the cantilever
+motion. In this approximation</p>
+<div class="math notranslate nohighlight" id="equation-eq-smalltipdf2">
+<span class="eqno">(5)<a class="headerlink" href="#equation-eq-smalltipdf2" title="Permalink to this equation">#</a></span>\[\Delta f = \frac{f}{2 \pi k x_{\mathrm{pk}}^2} \sum_j
+\int_{-\pi}^{\pi}
+    \mu_z(\vec{r}_j)
+        \left(
+            \frac{\partial B_z^{\mathrm{tip}}(x,y,z)}{\partial x}
+            - x_{\mathrm{pk}}
+            \cos{\theta} \: \frac{\partial^2
+            B_z^{\mathrm{tip}}(x,y,z)}{\partial x^2}
+        \right)
+    \: x_{\mathrm{pk}} \cos{\theta}
+\: d\theta\]</div>
+<p>There are two terms. The first term is</p>
+<div class="math notranslate nohighlight">
+\[\Delta f^{(1)} = \frac{f}{2 \pi k x_{\mathrm{pk}}} \sum_j \mu_z(\vec{r}_j)
+\frac{\partial B_z^{\mathrm{tip}}(x,y,z)}{\partial x}
+\int_{-\pi}^{\pi} \cos{\theta} \: d\theta\]</div>
+<p>We are interested in experiments carried out in the SPAM geometry and the
+hangdown  geometry. In both of these cases the first term vanishes: the sum
+over sample spins is zero since the gradient is both positive and negative
+over the sensitive slice. Moreover, the integral over <span class="math notranslate nohighlight">\(\theta\)</span> is zero.
+The second term in Eq. <a class="reference internal" href="#equation-eq-smalltipdf2">(5)</a> is</p>
+<div class="math notranslate nohighlight">
+\[\Delta f^{(2)} = - \frac{f}{2 k} \sum_j \mu_z(\vec{r}_j)
+\frac{\partial^2 B_z^{\mathrm{tip}}(x,y,z)}{\partial x^2}
+\underbrace{\frac{1}{\pi} \int_{-\pi}^{\pi} \cos^2{\theta} \:
+d\theta}_{= 1}\]</div>
+<p>which simplifies to the large-tip result, Eq. <a class="reference internal" href="#equation-eq-largetipdf">(1)</a>,</p>
+<div class="math notranslate nohighlight">
+\[\Delta f^{(2)} = - \frac{f}{2 k}
+\sum_j \mu_z(\vec{r}_j) \frac{\partial^2
+B_z^{\mathrm{tip}}(x,y,z)}{\partial x^2}\]</div>
+<p>We see from this derivation that the validity of Eq. <a class="reference internal" href="#equation-eq-largetipdf">(1)</a> rests
+on the validity of the approximation in Eq. <a class="reference internal" href="#equation-eq-expansion">(4)</a>.  According to
+Eq. <a class="reference internal" href="#equation-eq-expansion">(4)</a>, for Eq. <a class="reference internal" href="#equation-eq-largetipdf">(1)</a> to be valid, the change in
+the gradient experienced by any spin in the sample should be strictly linear
+in the cantilever amplitude.  This will not be true for a large-amplitude
+motion of the cantilever.</p>
+<p>Let us rewrite Eq. <a class="reference internal" href="#equation-eq-smalltipdf">(3)</a> by</p>
+<ol class="arabic simple">
+<li><p>assuming that the magnetization distribution is in steady-state,</p></li>
+<li><p>writing the frequency shift in terms of an eqivalent spring constant shift,</p></li>
+<li><p>expressing the result in terms of an equivalent force.</p></li>
+</ol>
+<p>We showed in Reference <a class="footnote-reference brackets" href="#lee2012apra" id="id16">4</a> that maximizing this equivalent force
+will maximize the signal-to-noise ratio in a frequency-shift experiment. In
+terms of a force, the ESR-CERMIT signal is</p>
+<div class="math notranslate nohighlight" id="equation-eq-smalltipd-f">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-smalltipd-f" title="Permalink to this equation">#</a></span>\[\Delta F = \Delta k \: x_{\mathrm{pk}} = \frac{2}{\pi} \sum_j
+\int_{0}^{\pi}
+    \mu_z(\vec{r}_j)
+    \: \frac{\partial B_z^{\mathrm{tip}}(x - x_{\mathrm{pk}}
+         \cos{\theta},y,z)}{\partial x}
+    \: \cos{\theta}
+\: d\theta\]</div>
+<p>In writing Eq. <a class="reference internal" href="#equation-eq-smalltipd-f">(6)</a> we have condensed the integral to a half
+cycle of the cantilever oscillation. In the integrand, the position variable
+<span class="math notranslate nohighlight">\(x(\theta) = x - x_{\mathrm{pk}} \cos{\theta}\)</span> runs from <span class="math notranslate nohighlight">\(x -
+x_{\mathrm{pk}}\)</span> to <span class="math notranslate nohighlight">\(x + x_{\mathrm{pk}}\)</span> as <span class="math notranslate nohighlight">\(\theta\)</span> runs from
+<span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(\pi\)</span>.  In the steady-state approximation, the spin
+distribution <span class="math notranslate nohighlight">\(\mu_z(\vec{r}_j)\)</span> in Eq. <a class="reference internal" href="#equation-eq-smalltipd-f">(6)</a> is
+determined in the same way as in the large-tip experiment.</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_smalltip</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="theory.html#mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate" title="mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.formula.polarization.rel_dpol_sat_steadystate</span></code></a>(...)</p></td>
+<td><p>Relative change in polarization for steady-state.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.formula.field.xtrapz_field_gradient</span></code>(...)</p></td>
+<td><p>Calculate CERMIT integral using Trapezoidal summation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Eric Moore and co-workers previously implemented Eqs. <a class="reference internal" href="#equation-eq-smalltipdf">(3)</a> and
+<a class="reference internal" href="#equation-eq-smalltipd-f">(6)</a> to calculate the ESR-MRFM signal from a single spin
+<a class="footnote-reference brackets" href="#lee2012apra" id="id17">4</a> <a class="footnote-reference brackets" href="#moore2009" id="id18">3</a></p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_singlespin</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_singlespin_approx</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.formula.field.xtrapz_field_gradient</span></code>(...)</p></td>
+<td><p>Calculate CERMIT integral using Trapezoidal summation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>And to simulate the amplitude dependence of the
+signal from a single slice whose magnetization has been inverted <em>via</em> an
+adiabatic rapid passage <a class="footnote-reference brackets" href="#moore2009dec" id="id19">2</a>.</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitarp_smalltip</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.formula.field.xtrapz_field_gradient</span></code>(...)</p></td>
+<td><p>Calculate CERMIT integral using Trapezoidal summation.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The single-slice simulation is quite
+slow because, essentially, a full magnetic field and field gradient simulation
+must be done for each <span class="math notranslate nohighlight">\(\theta\)</span>.  If you approximate the <span class="math notranslate nohighlight">\(\theta\)</span>
+integral using (only!) 32 points, then the simulation will take 32 times
+longer to run than single simulation.  Since the <span class="math notranslate nohighlight">\(x(\theta)\)</span> values are
+<em>not</em> equally spaced, you cannot simplify the integral by translating the
+<span class="math notranslate nohighlight">\(x\)</span> coordinates.</p>
+<p>John’s <a class="reference internal" href="theory.html#theory-irradation-section"><span class="std std-ref">intermittent irradiation</span></a> experiments
+also implemented:</p>
+<p><strong>Intermittent irradiation</strong></p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_periodirrad_stationarytip</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cornell-style frequency-shift</strong> <a class="footnote-reference brackets" href="#garner2004jun" id="id20">1</a></p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitarp</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitnut</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>IBM-style cyclic-inversion</strong> <a class="footnote-reference brackets" href="#degen2009jan" id="id21">11</a> <a class="footnote-reference brackets" href="#longenecker2012oct" id="id22">12</a></p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.ibmcyclic</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cornell-style cyclic saturation ESR</strong> <a class="footnote-reference brackets" href="#moore2009dec" id="id23">2</a> <a class="footnote-reference brackets" href="#issac2016feb" id="id24">13</a>
+<a class="footnote-reference brackets" href="#lee2012apr" id="id25">14</a></p>
+<p>There are two different versions of this experiment to simulate:</p>
+<ol class="arabic simple">
+<li><p>an experiment employing a large spherical magnetic tip (radius <span class="math notranslate nohighlight">\(r
+\sim 2 \: \mu \mathrm{m}\)</span>).</p></li>
+<li><p>an experiment employing a small spherical magnetic tip (radius <span class="math notranslate nohighlight">\(r =
+100 \; \mathrm{nm}\)</span>).</p></li>
+</ol>
+<p>The cyclic-saturation experiment has a few important differences from the
+NMR experiments previously described include:</p>
+<ul class="simple">
+<li><p>the cantilever motion cannot be neglected and actually (partially)
+determines the volume of spins in resonance as the cantilever motion sweeps
+out the resonant slice</p></li>
+<li><p>the magnetization is determined by the Bloch equations</p></li>
+</ul>
+<p><strong>Large tip approximation</strong></p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>In practice, spins are saturated with a microwave pulse every n cantilever
+cycles. This saturation is modulated with a time of no microwave pulses
+to generate a modulated cantilever frequency shift detected via lock-in
+detection.</p></li>
+<li><p>For this simulation, we can calculate the spin-dependent frequency shift
+experiments by the cantilever using</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}  \Delta f = - \frac{f_c}{2 k} \sum_j \mu_z(\vec{r}_j) \frac{\partial^2
+  B_z^{\mathrm{tip}}( \vec{r}_j )}{\partial x^2}\\which is valid when the tip radius is much smaller than the zero-to-peak
+the amplitude of the cantilever oscillation. Where :math:`f_c` is the cantilever resonance\end{aligned}\end{align} \]</div>
+<ul class="simple">
+<li><p>At a fixed cantilever position in this ESR-CERMIT experiment, the
+magnetization distribution <span class="math notranslate nohighlight">\(\mu_z( \vec{r} )\)</span> depends on the frequency
+<span class="math notranslate nohighlight">\(f_{\mathrm{rf}}\)</span> and strength <span class="math notranslate nohighlight">\(B_1\)</span> of the microwave field, the
+sample relaxation times (<span class="math notranslate nohighlight">\(T_1\)</span> and <span class="math notranslate nohighlight">\(T_2\)</span>), the sample spin
+density, the applied magnetic field <span class="math notranslate nohighlight">\(B_0\)</span>, and the tip magnetic field
+<span class="math notranslate nohighlight">\(B_z^{\mathrm{tip}}\)</span>.</p></li>
+<li><p>As the cantilever moves it sweeps over a region of saturated spins that we
+must sum over to obtain the signal. We must include these cantilever motion
+effects in our simulations.</p></li>
+</ul>
+<p><strong>Small tip approximation</strong></p>
+<p>In the small tip experiment, the cantilever amplitude may not be assumed small
+when compared to the tip radius. We therefore must evaluate the full integral
+given by Lee, <em>et al.</em>.</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitarp_smalltip</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_smalltip</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cornell Single Spin ESR</strong></p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_singlespin</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Experiments</strong></p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_stationarytip</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">mrfmsim_marohn.experiment.cermitesr_periodirrad_stationarytip</span></code></p></td>
+<td><p>Experiment class for mrfmsim.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">#</a></h2>
+<dl class="footnote brackets">
+<dt class="label" id="garner2004jun"><span class="brackets">1</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>,<a href="#id7">3</a>,<a href="#id9">4</a>,<a href="#id20">5</a>)</span></dt>
+<dd><p>Garner, S. R.; Kuehn, S.; Dawlaty, J. M.; Jenkins, N. E. &amp;
+Marohn, J. A.  “Force-Gradient Detected Nuclear Magnetic Resonance” <em>Appl.
+Phys. Lett.</em>, <strong>2004</strong>, <em>84</em>, 5091 - 5093
+[<a class="reference external" href="http://dx.doi.org/10.1063/1.1762700">10.1063/1.1762700</a>].</p>
+</dd>
+<dt class="label" id="moore2009dec"><span class="brackets">2</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id5">2</a>,<a href="#id6">3</a>,<a href="#id10">4</a>,<a href="#id19">5</a>,<a href="#id23">6</a>)</span></dt>
+<dd><p>Moore, E. W.; Lee, S.-G.; Hickman, S. A.; Wright, S. J.;
+Harrell, L. E.; Borbat, P. P.; Freed, J. H. &amp; Marohn, J. A. “Scanned-Probe
+Detection of Electron Spin Resonance from a Nitroxide Spin Probe”, <em>Proc.
+Natl. Acad. Sci. U.S.A.</em>, <strong>2009</strong>, <em>106</em>, 22251 - 22256
+[<a class="reference external" href="http://doi.org/10.1073/pnas.0908120106">10.1073/pnas.0908120106</a>].</p>
+</dd>
+<dt class="label" id="moore2009"><span class="brackets"><a class="fn-backref" href="#id18">3</a></span></dt>
+<dd><p>Moore, E. W. &amp; Marohn, J. A. <em>Unpublished calculation</em>,
+<strong>2009</strong>.</p>
+</dd>
+<dt class="label" id="lee2012apra"><span class="brackets">4</span><span class="fn-backref">(<a href="#id8">1</a>,<a href="#id11">2</a>,<a href="#id12">3</a>,<a href="#id13">4</a>,<a href="#id16">5</a>,<a href="#id17">6</a>)</span></dt>
+<dd><p>Lee, S.-G.; Moore, E. W. &amp; Marohn, J. A. “A Unified Picture
+of Cantilever Frequency-Shift Measurements of Magnetic Resonance”,
+<em>Phys. Rev. B</em>, <strong>2012</strong>, <em>85</em>, 165447
+[<a class="reference external" href="http://doi.org/10.1103/PhysRevB.85.165447">10.1103/PhysRevB.85.165447</a>].</p>
+</dd>
+<dt class="label" id="lee2012note"><span class="brackets"><a class="fn-backref" href="#id14">5</a></span></dt>
+<dd><p>Equation 20 in Lee <em>et al.</em> <strong>2012</strong> is off by a factor of
+<span class="math notranslate nohighlight">\(-1\)</span>.  We give the correct equation above.</p>
+</dd>
+<dt class="label" id="rugar2004jul"><span class="brackets"><a class="fn-backref" href="#id15">6</a></span></dt>
+<dd><p>Rugar, D.; Budakian, R.; Mamin, H. J. &amp; Chui, B. W. “Single
+Spin Detection by Magnetic Resonance Force Microscopy”, <em>Nature</em>, <strong>2004</strong>
+, <em>430</em>, 329 - 332
+[<a class="reference external" href="http://dx.doi.org/10.1038/nature02658">10.1038/nature02658</a>].</p>
+</dd>
+<dt class="label" id="wago1998jan"><span class="brackets">7</span></dt>
+<dd><p>Wago, K.; Botkin, D.; Yannoni, C. &amp; Rugar, D.
+“Force-detected Electron-spin Resonance: Adiabatic Inversion, Nutation,
+and Spin Echo”, <em>Phys. Rev. B</em>, <strong>1998</strong>, <em>57</em>, 1108 - 1114
+[<a class="reference external" href="http://doi.org/10.1103/PhysRevB.57.1108">10.1103/PhysRevB.57.1108</a>].</p>
+</dd>
+<dt class="label" id="klein2000aug"><span class="brackets">8</span></dt>
+<dd><p>Klein, O.; Naletov, V. &amp; Alloul, H. “Mechanical Detection
+of Nuclear Spin Relaxation in a Micron-size Crystal”, <em>Eur. Phys. J. B</em>,
+<strong>2000</strong>, <em>17</em>, 57 - 68
+[<a class="reference external" href="http://dx.doi.org/10.1007/s100510070160">10.1007/s100510070160</a>].</p>
+</dd>
+<dt class="label" id="baum1985dec"><span class="brackets">9</span></dt>
+<dd><p>Baum, J.; Tycko, R. &amp; Pines, A. “Broadband and Adiabatic
+Inversion of a Two-level System by Phase-modulated Pulses”, <em>Phys. Rev. A</em>
+, <strong>1985</strong>, <em>32</em>, 3435 - 3447
+[<a class="reference external" href="http://dx.doi.org/10.1103/PhysRevA.32.3435">10.1103/PhysRevA.32.3435</a>].</p>
+</dd>
+<dt class="label" id="kupce1996feb"><span class="brackets">10</span></dt>
+<dd><p>Kupce, E. &amp; Freeman, R. “Optimized Adiabatic Pulses for
+Wideband Spin Inversion”, <em>Journal of Magnetic Resonance, Series A</em>,
+<strong>1996</strong>, <em>118</em>, 299 - 303
+[<a class="reference external" href="http://dx.doi.org/10.1006/jmra.1996.0042">10.1006/jmra.1996.0042</a>].</p>
+</dd>
+<dt class="label" id="degen2009jan"><span class="brackets"><a class="fn-backref" href="#id21">11</a></span></dt>
+<dd><p>Degen, C. L.; Poggio, M.; Mamin, H. J.; Rettner, C. T. &amp;
+Rugar, D. “Nanoscale Magnetic Resonance Imaging”, <em>Proc. Natl. Acad.
+Sci. U.S.A.</em>, <strong>2009</strong>, <em>106</em>, 1313 - 1317
+[<a class="reference external" href="http://dx.doi.org/10.1073/pnas.0812068106">10.1073/pnas.0812068106</a>].</p>
+</dd>
+<dt class="label" id="longenecker2012oct"><span class="brackets">12</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id22">2</a>)</span></dt>
+<dd><p>Longenecker, J. G.; Mamin, H. J.; Senko, A. W.; Chen,
+L.; Rettner, C. T.; Rugar, D. &amp; Marohn, J. A. “High-Gradient
+Nanomagnets on Cantilevers for Sensitive Detection of Nuclear
+Magnetic Resonance”, <em>ACS Nano</em>, <strong>2012</strong>, <em>6</em>, 9637 - 9645
+[<a class="reference external" href="http://dx.doi.org/10.1021/nn3030628">10.1021/nn3030628</a>].</p>
+</dd>
+<dt class="label" id="issac2016feb"><span class="brackets"><a class="fn-backref" href="#id24">13</a></span></dt>
+<dd><p>Isaac, C. E.; Gleave, C. M.; Nasr, P. T.; Nguyen, H.L.;
+Curley, E. A.; Yoder, J.L.; Moore, E. W.; Chen, L &amp; Marohn, J. A.
+“Dynamic nuclear polarization in a magnetic resonance force microscope
+experiment”, <em>Phys. Chem. Chem. Phys.</em>, <strong>2016</strong>, <em>18</em>, 8806
+[<a class="reference external" href="http://dx.doi.org/10.1039/c6cp00084c">10.1039/c6cp00084c</a>].</p>
+</dd>
+<dt class="label" id="lee2012apr"><span class="brackets"><a class="fn-backref" href="#id25">14</a></span></dt>
+<dd><p>Lee, S. G.; Moore, E. W.; &amp; Marohn, J. A. “Unified picture of
+cantilever frequency shift measurements of magnetic
+resonance”, <em>Phys. Rev. B</em>, <strong>2012</strong>, <em>85</em>, 165447
+[<a class="reference external" href="doi.org/10.1103/PhysRevB.85.165447">10.1103/PhysRevB.85.165447</a>].</p>
+</dd>
+</dl>
+</section>
+<section id="module-mrfmsim_marohn.experiment">
+<span id="experiment-module"></span><h2><code class="xref py py-mod docutils literal notranslate"><span class="pre">experiment</span></code> module<a class="headerlink" href="#module-mrfmsim_marohn.experiment" title="Permalink to this headline">#</a></h2>
+<p>Import the experiments dynamically to the mrfmsim_marohn.experiment module.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="theory.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Theory</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="simulation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Trapezoid Integration</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Peter Sun, John A. Marohn, Corinne Isaac<br/>
+  
+      &copy; Copyright 2023, Peter Sun, John A. Marohn.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

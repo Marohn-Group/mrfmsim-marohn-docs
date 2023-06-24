@@ -1,0 +1,783 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Tests &#8212; MrfmSim-Marohn 0.1.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="Changelog" href="changelog.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">MrfmSim-Marohn 0.1.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting Started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="readme.html">
+   MrfmSim-Marohn
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Experimental Setup
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/sample.html">
+   Sample
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/grid.html">
+   Grid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/magnet.html">
+   Magnet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/cantilever.html">
+   Cantilever
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Theory and Experiments
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="theory.html">
+   Theory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="experiment.html">
+   Experiment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="simulation.html">
+   Trapezoid Integration
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Units
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="units.html">
+   Units
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="develop.html">
+   Development notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="license.html">
+   License
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acknowlegements.html">
+   Acknowledgements
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/tests.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#signal-verification">
+   Signal verification
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#magnet-test">
+   Magnet Test
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#polarization-test">
+   Polarization Test
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experiment-test">
+   Experiment Test
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#force-detection">
+     Force detection
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#force-gradient-detection">
+     Force-gradient detection
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.test_experiment.test_ibmcyclic">
+   Testing Lists
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tests</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#signal-verification">
+   Signal verification
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#magnet-test">
+   Magnet Test
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#polarization-test">
+   Polarization Test
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#experiment-test">
+   Experiment Test
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#force-detection">
+     Force detection
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#force-gradient-detection">
+     Force-gradient detection
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-tests.test_experiment.test_ibmcyclic">
+   Testing Lists
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="tests">
+<h1>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+<p>This module is a collection of files that test the functions in the <strong>MrfmSim</strong> package.
+To run the unit tests, open up a terminal in the <code class="docutils literal notranslate"><span class="pre">MrfmSim</span></code> directory and
+run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pytest</span>
+</pre></div>
+</div>
+</section>
+<section id="signal-verification">
+<h2>Signal verification<a class="headerlink" href="#signal-verification" title="Permalink to this headline">#</a></h2>
+<p>We can test the signal-calculation modules by computing the signal from a single spin.
+Consider a magnet-tipped cantilever operated in the hangdown geometry:</p>
+<ul class="simple">
+<li><p>a magnetic field is applied along the <span class="math notranslate nohighlight">\(z\)</span> direction to polarize the
+cantilever’s magnet and to define the quantization axis of the sample’s spins;</p></li>
+<li><p>the cantilever oscillates in the <span class="math notranslate nohighlight">\(x\)</span> direction;</p></li>
+<li><p>the long axis of the cantilever is parallel to the <span class="math notranslate nohighlight">\(z\)</span> direction;</p></li>
+<li><p>the magnet at the tip of the cantilever is a sphere of radius <span class="math notranslate nohighlight">\(r\)</span>, polarized
+along the <span class="math notranslate nohighlight">\(z\)</span> direction, with saturation magnetization <span class="math notranslate nohighlight">\(M_s\)</span>
+and saturation field <span class="math notranslate nohighlight">\(\mu_0 M_s\)</span>;</p></li>
+<li><p>the center of the spherical magnet lies at the origin, <span class="math notranslate nohighlight">\((0,0,0)\)</span>;</p></li>
+<li><p>the sample lies in the <span class="math notranslate nohighlight">\(xy\)</span> plane; for simplicity, we further assume
+that the spin lies along the <span class="math notranslate nohighlight">\(y = 0\)</span> line;</p></li>
+<li><p>the distance between the <em>center</em> of the magnet and the sample plane is <span class="math notranslate nohighlight">\(z\)</span>.</p></li>
+</ul>
+<p>Some notes on the additional tests</p>
+</section>
+<section id="magnet-test">
+<h2>Magnet Test<a class="headerlink" href="#magnet-test" title="Permalink to this headline">#</a></h2>
+<p>The RectMagnet is tested through its symmetry factors: it is symmetric in the <span class="math notranslate nohighlight">\(z\)</span> direction
+when x and y are 0. The gradient functions are tested against a numerical derivative calculation
+from the field. <span class="math notranslate nohighlight">\(B_z\)</span> is an even function in the <span class="math notranslate nohighlight">\(x\)</span> direction,
+<span class="math notranslate nohighlight">\(B_{zx}\)</span> is an odd function in the x-direction and
+:math: <cite>B_{zxx}</cite> is an even function in the <span class="math notranslate nohighlight">\(x\)</span> direction.</p>
+</section>
+<section id="polarization-test">
+<h2>Polarization Test<a class="headerlink" href="#polarization-test" title="Permalink to this headline">#</a></h2>
+<p>The polarization test for <code class="docutils literal notranslate"><span class="pre">irrad_periodic</span></code> function is taken from John’s notebook</p>
+</section>
+<section id="experiment-test">
+<span id="tests-experimental-section"></span><h2>Experiment Test<a class="headerlink" href="#experiment-test" title="Permalink to this headline">#</a></h2>
+<p>Some of the tests are calculated against some of the old notebook examples from John and Corinne.
+Note to see the notebook and examples go to the
+<a class="reference external" href="https://github.com/peterhs73/MrfmSim-archived">MrfmSim-archived</a> package’s git commit (c74d504).</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">IBMCyclic</span></code> dF_spin -&gt; test_experiment from John Marohn.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IBMCyclic</span></code> dF2_spin -&gt; value taken from test-ibmexpt-1.ipynb simulation 1, #4 - 9,
+matching with relative 5e-5 precision.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CermitARP</span></code> is taken from “test_cornellexptobject.py”</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CermitESR</span></code> is tested against value from “test-cornellexpt-4.ipynb”
+(Moore experiment - local peak, # 0 - 5, Issac Experiment, # 24 - 28)
+the difference in value is expected because the min_abs_offset
+function fixed a previous issue.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CermitARP_SmallTip</span></code> is tested against “test-cornellexpt-8-Hickman_nanomagnet_simulations.ipynb”, first simulation.</p></li>
+<li><p>CermitARP_SmallTip is compared with CermitARP, in two cases using a rectangular magnet,
+one is when the amplitude is small, they should be the same, and when tip_sep is large,
+the effect of amplitude is also small
+(There is a comparison in “test-micrometertip_smallampapprox_vs_exactsol.ipynb”
+on small amplitude, however, the result is unchecked).</p></li>
+<li><p>CmeritSingleSpinESR_Approx is compared with CermitARP_SmallTip.</p></li>
+<li><dl class="simple">
+<dt>SingleSpinESR</dt><dd><ul>
+<li><p>The approximation is tested against both SPAM and hangdown geometry of the analytical solution</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<section id="force-detection">
+<h3>Force detection<a class="headerlink" href="#force-detection" title="Permalink to this headline">#</a></h3>
+<p>The force produced by a single spin is</p>
+<div class="math notranslate nohighlight">
+\[\delta F_{\mathrm{spin}} = \mu_{\mathrm{spin}} \:
+    G_{zx}(r_{\mathrm{spin}})\]</div>
+<p>with <span class="math notranslate nohighlight">\(\mu_{\mathrm{spin}}\)</span> the spin magnetic moment and
+<span class="math notranslate nohighlight">\(G_{zx} = \partial B_z / \partial x\)</span> and <span class="math notranslate nohighlight">\(r_{\mathrm{spin}}\)</span>
+the location of the spin.
+The gradient experienced by a spin located in the <span class="math notranslate nohighlight">\(y = 0\)</span> plane is</p>
+<div class="math notranslate nohighlight">
+\[G_{zx}(x,0,z) = 4 \mu_0 M_s r^3 \:
+    \frac{x \: (x^2 - 4 z^2)}{(x^2 + z^2)^{7/2}}\]</div>
+<p>We see that the gradient <span class="math notranslate nohighlight">\(G_{zx}\)</span> is zero for a spin directly below the
+tip at <span class="math notranslate nohighlight">\((0,0,z)\)</span>.  For the single-spin force experiment, we must therefore
+place the spin “off to the side”, at a location <span class="math notranslate nohighlight">\((x,0,z)\)</span>.
+The gradient is maximized at (approximately) <span class="math notranslate nohighlight">\(x_{\mathrm{opt}} = \pm 0.389295 \: z\)</span>.
+For a spin placed at this optimal location,</p>
+<div class="math notranslate nohighlight">
+\[G_{zx}(x_{\mathrm{opt}}, 0, z)
+    \approx 0.914269 \: \frac{\mu_0 M_s}{r}
+    \left( \frac{r}{z} \right)^{4}\]</div>
+<p>In the hangdown-geometry experiment delineated above, the force acting on a magnet-tipped
+cantilever from a single spin placed at an optimal location “off to the side” of the cantilever tip is</p>
+<div class="math notranslate nohighlight">
+\[\delta F_{\mathrm{spin}}
+    \approx 0.914269 \: \mu_{\mathrm{spin}} \:
+    \frac{\mu_0 M_s}{r}
+    \left( \frac{r}{z} \right)^{4}\]</div>
+<p>With</p>
+<ul class="simple">
+<li><p>tip magnetization <span class="math notranslate nohighlight">\(\mu_0 M_s = 1800 \: \mathrm{mT}\)</span> (cobalt)</p></li>
+<li><p>tip radius <span class="math notranslate nohighlight">\(r = 50 \: \mathrm{nm}\)</span></p></li>
+<li><p>tip-sample separation <span class="math notranslate nohighlight">\(20 \: \mathrm{nm}\)</span>, that is, <span class="math notranslate nohighlight">\(z = 70 \: \mathrm{nm}\)</span></p></li>
+<li><p>a single (fully polarized) electron spin placed at <span class="math notranslate nohighlight">\((27.2507, 0.0000, 70.0000) \: \mathrm{nm}\)</span></p></li>
+</ul>
+<p>the force is</p>
+<div class="math notranslate nohighlight">
+\[\delta F_{\mathrm{spin}} = -79.231 \: \mathrm{aN}\]</div>
+</section>
+<section id="force-gradient-detection">
+<h3>Force-gradient detection<a class="headerlink" href="#force-gradient-detection" title="Permalink to this headline">#</a></h3>
+<p>The force-gradient produced by a single spin is</p>
+<div class="math notranslate nohighlight">
+\[\delta k_{\mathrm{spin}} = \mu_{\mathrm{spin}} \:
+    G_{zxx}(r_{\mathrm{spin}})\]</div>
+<p>with <span class="math notranslate nohighlight">\(G_{zxx} = \partial^2 B_z / \partial x^2\)</span>.
+For a single spin directly below the tip at <span class="math notranslate nohighlight">\((0,0,z)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[G_{zxx}(0,0,z) = - \frac{4 \mu_0 M_s r^3}{z^5}
+ = - \frac{4 \mu_0 M_s}{r^2} \left( \frac{r}{z} \right)^{5}\]</div>
+<p>In the hangdown-geometry experiment delineated above, the force gradient
+acting on a magnet-tipped cantilever from a single spin placed directly below the cantilever tip is</p>
+<div class="math notranslate nohighlight">
+\[\delta k_{\mathrm{spin}}
+    = - \mu_{\mathrm{spin}} \: \frac{4 \mu_0 M_s}{r^2}
+        \left( \frac{r}{z} \right)^{5}\]</div>
+<p>With</p>
+<ul class="simple">
+<li><p>tip magnetization <span class="math notranslate nohighlight">\(\mu_0 M_s = 1800 \: \mathrm{mT}\)</span> (cobalt)</p></li>
+<li><p>tip radius <span class="math notranslate nohighlight">\(r = 50 \: \mathrm{nm}\)</span></p></li>
+<li><p>tip-sample separation <span class="math notranslate nohighlight">\(20 \: \mathrm{nm}\)</span>, that is, <span class="math notranslate nohighlight">\(z = 70 \: \mathrm{nm}\)</span></p></li>
+<li><p>a single (fully polarized) electron spin placed at <span class="math notranslate nohighlight">\((0.0, 0.0, 70.0) \: \mathrm{nm}\)</span></p></li>
+</ul>
+<p>the force gradient is</p>
+<div class="math notranslate nohighlight">
+\[\delta k_{\mathrm{spin}} = 4.95203 \: \mathrm{aN} \: \mathrm{nm}^{-1}
+ = 4.95203 \: \mathrm{nN} \: \mathrm{m}^{-1}\]</div>
+</section>
+</section>
+<section id="module-tests.test_experiment.test_ibmcyclic">
+<span id="testing-lists"></span><h2>Testing Lists<a class="headerlink" href="#module-tests.test_experiment.test_ibmcyclic" title="Permalink to this headline">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_experiment.test_ibmcyclic.TestIBMCyclic">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_experiment.test_ibmcyclic.</span></span><span class="sig-name descname"><span class="pre">TestIBMCyclic</span></span><a class="reference internal" href="_modules/tests/test_experiment/test_ibmcyclic.html#TestIBMCyclic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_experiment.test_ibmcyclic.TestIBMCyclic" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Test IBMCyclic Experimental method.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_experiment.test_ibmcyclic.TestIBMCyclic.test_IBMCyclic_dF2_spin">
+<span class="sig-name descname"><span class="pre">test_IBMCyclic_dF2_spin</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_experiment/test_ibmcyclic.html#TestIBMCyclic.test_IBMCyclic_dF2_spin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_experiment.test_ibmcyclic.TestIBMCyclic.test_IBMCyclic_dF2_spin" title="Permalink to this definition">#</a></dt>
+<dd><p>Test IBM cyclic force variance signal for nucleus.</p>
+<p>Values are taken from “test-ibmexpt-1.ipynb” simulation 1 #4- #9
+based on John’s calculation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_experiment.test_ibmcyclic.TestIBMCyclic.test_IBMCyclic_dF_spin">
+<span class="sig-name descname"><span class="pre">test_IBMCyclic_dF_spin</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_experiment/test_ibmcyclic.html#TestIBMCyclic.test_IBMCyclic_dF_spin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_experiment.test_ibmcyclic.TestIBMCyclic.test_IBMCyclic_dF_spin" title="Permalink to this definition">#</a></dt>
+<dd><p>Test IBM curie law signal.</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-tests.test_formula.test_field"></span><dl class="py class">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.TestXTrapzFieldGradient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_formula.test_field.</span></span><span class="sig-name descname"><span class="pre">TestXTrapzFieldGradient</span></span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#TestXTrapzFieldGradient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.TestXTrapzFieldGradient" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Test trapz field gradient.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.TestXTrapzFieldGradient.test_xtrapz_field_gradient_large_distance">
+<span class="sig-name descname"><span class="pre">test_xtrapz_field_gradient_large_distance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#TestXTrapzFieldGradient.test_xtrapz_field_gradient_large_distance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.TestXTrapzFieldGradient.test_xtrapz_field_gradient_large_distance" title="Permalink to this definition">#</a></dt>
+<dd><p>Test gradient against a large tip-sample separation.</p>
+<p>When the distance is very large, the change of Bzx in between grid points
+are small.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.TestXTrapzFieldGradient.test_xtrapz_field_gradient_smallamp">
+<span class="sig-name descname"><span class="pre">test_xtrapz_field_gradient_smallamp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#TestXTrapzFieldGradient.test_xtrapz_field_gradient_smallamp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.TestXTrapzFieldGradient.test_xtrapz_field_gradient_smallamp" title="Permalink to this definition">#</a></dt>
+<dd><p>Test gradient against a small x0p.</p>
+<p>When the 0 to the peak is very small compared to the magnet, the field is
+equivalent to Bzxx. Here we “fake” a small grid step for the x direction,
+because the grid step here is only used to calculate x_0p. The cantilever is
+150 nm away from the sample.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.TestXTrapzFxDtheta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_formula.test_field.</span></span><span class="sig-name descname"><span class="pre">TestXTrapzFxDtheta</span></span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#TestXTrapzFxDtheta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.TestXTrapzFxDtheta" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Test xtrapz_fxdtheta.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.TestXTrapzFxDtheta.test_xtrapz_fxdtheta_cos">
+<span class="sig-name descname"><span class="pre">test_xtrapz_fxdtheta_cos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#TestXTrapzFxDtheta.test_xtrapz_fxdtheta_cos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.TestXTrapzFxDtheta.test_xtrapz_fxdtheta_cos" title="Permalink to this definition">#</a></dt>
+<dd><p>Test xtrapz_fxdtheta against :math: <cite>cos{x}dx</cite></p>
+<p>Let’s consider the field method returns 1, the trapz integral
+should return the value of</p>
+<div class="math notranslate nohighlight">
+\[\int_{-\pi}^{\pi}{x_0 \cos\theta d\theta}\]</div>
+<p>The results:
+(-pi/2 -&gt; 0): x0
+(-pi -&gt; 0): 0</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.TestXTrapzFxDtheta.test_xtrapz_fxdtheta_multidim">
+<span class="sig-name descname"><span class="pre">test_xtrapz_fxdtheta_multidim</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#TestXTrapzFxDtheta.test_xtrapz_fxdtheta_multidim"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.TestXTrapzFxDtheta.test_xtrapz_fxdtheta_multidim" title="Permalink to this definition">#</a></dt>
+<dd><p>Test xtrapz_fxdtheta against :math: <cite>x cos{x}</cite> for multi-dimensions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.TestXTrapzFxDtheta.test_xtrapz_xtrapz_fxdtheta_x2cos">
+<span class="sig-name descname"><span class="pre">test_xtrapz_xtrapz_fxdtheta_x2cos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#TestXTrapzFxDtheta.test_xtrapz_xtrapz_fxdtheta_x2cos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.TestXTrapzFxDtheta.test_xtrapz_xtrapz_fxdtheta_x2cos" title="Permalink to this definition">#</a></dt>
+<dd><p>Test xtrapz_fxdtheta against :math: <cite>x2cos{x}</cite>.</p>
+<p>Let’s consider a case where the field f(x) = x</p>
+<div class="math notranslate nohighlight">
+\[\int_{-\pi}^{\pi}{(x-x_0 \cos\theta)x_0 \cos\theta d\theta}\]</div>
+<p>The results:
+(-pi/2 -&gt; 0): x^2*x0 - pi/2*x*x0^2 + 2/3 * x0^3
+(-pi -&gt; 0): - pi*x*x0^2</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.TestXTrapzFxDtheta.test_xtrapz_xtrapz_fxdtheta_xcos">
+<span class="sig-name descname"><span class="pre">test_xtrapz_xtrapz_fxdtheta_xcos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#TestXTrapzFxDtheta.test_xtrapz_xtrapz_fxdtheta_xcos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.TestXTrapzFxDtheta.test_xtrapz_xtrapz_fxdtheta_xcos" title="Permalink to this definition">#</a></dt>
+<dd><p>Test xtrapz_fxdtheta against :math: <cite>x cos{x}</cite>.</p>
+<p>Let’s consider a case where the field f(x) = x</p>
+<div class="math notranslate nohighlight">
+\[\int_{-\pi}^{\pi}{(x-x_0 \cos\theta)x_0 \cos\theta d\theta}\]</div>
+<p>The results:
+(-pi/2 -&gt; 0): x*x0 - x0^2*pi/4
+(-pi -&gt; 0): - x0^2 * pi/2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.test_B_offset">
+<span class="sig-prename descclassname"><span class="pre">tests.test_formula.test_field.</span></span><span class="sig-name descname"><span class="pre">test_B_offset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#test_B_offset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.test_B_offset" title="Permalink to this definition">#</a></dt>
+<dd><p>Test B_offset.</p>
+<p>Test the nucleus.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.test_min_abs_offset">
+<span class="sig-prename descclassname"><span class="pre">tests.test_formula.test_field.</span></span><span class="sig-name descname"><span class="pre">test_min_abs_offset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#test_min_abs_offset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.test_min_abs_offset" title="Permalink to this definition">#</a></dt>
+<dd><p>Test min_abs_x.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_formula.test_field.test_min_abs_offset_symmetry">
+<span class="sig-prename descclassname"><span class="pre">tests.test_formula.test_field.</span></span><span class="sig-name descname"><span class="pre">test_min_abs_offset_symmetry</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_field.html#test_min_abs_offset_symmetry"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_field.test_min_abs_offset_symmetry" title="Permalink to this definition">#</a></dt>
+<dd><p>Test if min_abs_x result is symmetric.
+If a matrix is flipped, the result should also be flipped</p>
+</dd></dl>
+
+<span class="target" id="module-tests.test_formula.test_math"></span><dl class="py function">
+<dt class="sig sig-object py" id="tests.test_formula.test_math.test_as_strided_x">
+<span class="sig-prename descclassname"><span class="pre">tests.test_formula.test_math.</span></span><span class="sig-name descname"><span class="pre">test_as_strided_x</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_math.html#test_as_strided_x"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_math.test_as_strided_x" title="Permalink to this definition">#</a></dt>
+<dd><p>Testing if as_strided_x maximum matches running max.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_formula.test_math.test_ogrid_sub">
+<span class="sig-prename descclassname"><span class="pre">tests.test_formula.test_math.</span></span><span class="sig-name descname"><span class="pre">test_ogrid_sub</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_math.html#test_ogrid_sub"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_math.test_ogrid_sub" title="Permalink to this definition">#</a></dt>
+<dd><p>Test ogrid_sub.</p>
+<p>The sub results in a iterable mapping. Here tests if the
+dimension and values are correct.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_formula.test_math.test_slice_matrix">
+<span class="sig-prename descclassname"><span class="pre">tests.test_formula.test_math.</span></span><span class="sig-name descname"><span class="pre">test_slice_matrix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_math.html#test_slice_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_math.test_slice_matrix" title="Permalink to this definition">#</a></dt>
+<dd><p>Test slice matrix cuts the matrix in the center.</p>
+</dd></dl>
+
+<span class="target" id="module-tests.test_formula.test_misc"></span><dl class="py function">
+<dt class="sig sig-object py" id="tests.test_formula.test_misc.test_convert_grid_pts">
+<span class="sig-prename descclassname"><span class="pre">tests.test_formula.test_misc.</span></span><span class="sig-name descname"><span class="pre">test_convert_grid_pts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_formula/test_misc.html#test_convert_grid_pts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_formula.test_misc.test_convert_grid_pts" title="Permalink to this definition">#</a></dt>
+<dd><p>Test convert_grid_pts.</p>
+<p>Make sure the final value is an int and is the floor value.</p>
+</dd></dl>
+
+<span class="target" id="module-tests.test_units"></span><dl class="py function">
+<dt class="sig sig-object py" id="tests.test_units.test_units">
+<span class="sig-prename descclassname"><span class="pre">tests.test_units.</span></span><span class="sig-name descname"><span class="pre">test_units</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/test_units.html#test_units"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.test_units.test_units" title="Permalink to this definition">#</a></dt>
+<dd><p>Test if units are loaded correctly.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="changelog.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Changelog</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="license.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">License</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Peter Sun, John A. Marohn, Corinne Isaac<br/>
+  
+      &copy; Copyright 2023, Peter Sun, John A. Marohn.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

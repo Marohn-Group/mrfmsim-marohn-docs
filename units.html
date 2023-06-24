@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Units &#8212; MrfmSim-Marohn 0.1.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Development notes" href="develop.html" />
+    <link rel="prev" title="Trapezoid Integration" href="simulation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">MrfmSim-Marohn 0.1.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting Started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="readme.html">
+   MrfmSim-Marohn
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Experimental Setup
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/sample.html">
+   Sample
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/grid.html">
+   Grid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/magnet.html">
+   Magnet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="component/cantilever.html">
+   Cantilever
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Theory and Experiments
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="theory.html">
+   Theory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="experiment.html">
+   Experiment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="simulation.html">
+   Trapezoid Integration
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Units
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Units
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="develop.html">
+   Development notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tests.html">
+   Tests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="license.html">
+   License
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acknowlegements.html">
+   Acknowledgements
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/units.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Units</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="units">
+<h1>Units<a class="headerlink" href="#units" title="Permalink to this headline">#</a></h1>
+<p>To avoid roundoff error, we work in units that are natural to the problem at hand:</p>
+<ul class="simple">
+<li><p>position <span class="math notranslate nohighlight">\((x,y,z)\)</span>: <span class="math notranslate nohighlight">\(\mathrm{nm}\)</span></p></li>
+<li><p>time <span class="math notranslate nohighlight">\(t\)</span>: <span class="math notranslate nohighlight">\(\mathrm{s}\)</span></p></li>
+<li><p>fields <span class="math notranslate nohighlight">\(B_z\)</span> and <span class="math notranslate nohighlight">\(B_1\)</span>: <span class="math notranslate nohighlight">\(\mathrm{mT} = 1 \times 10^{-3} \: \mathrm{T}\)</span></p></li>
+<li><p>force: <span class="math notranslate nohighlight">\(F\)</span>: <span class="math notranslate nohighlight">\(\mathrm{aN} = 1 \times 10^{-18} \: \mathrm{N}\)</span></p></li>
+<li><p>temperature <span class="math notranslate nohighlight">\(T\)</span>: <span class="math notranslate nohighlight">\(\mathrm{K}\)</span></p></li>
+</ul>
+<p>Units which follow from these choices include:</p>
+<ul class="simple">
+<li><p>volume element <span class="math notranslate nohighlight">\(dV\)</span>: <span class="math notranslate nohighlight">\(\mathrm{nm}^{-3}\)</span></p></li>
+<li><p>frequency <span class="math notranslate nohighlight">\(f\)</span>: <span class="math notranslate nohighlight">\(\mathrm{Hz}\)</span></p></li>
+<li><p>gyromagnetic ratio <span class="math notranslate nohighlight">\(\gamma_{\mathrm{p}}\)</span> and <span class="math notranslate nohighlight">\(\gamma_{\mathrm{e}}\)</span>: <span class="math notranslate nohighlight">\(\mathrm{s}^{-1} \: \mathrm{mT}^{-1}\)</span></p></li>
+<li><p>field derivative <span class="math notranslate nohighlight">\(\partial B_z / \partial x\)</span>: <span class="math notranslate nohighlight">\(\mathrm{mT} \: \mathrm{nm}^{-1}\)</span></p></li>
+<li><p>field second derivative <span class="math notranslate nohighlight">\(\partial^2 B_z / \partial x^2\)</span>: <span class="math notranslate nohighlight">\(\mathrm{mT} \: \mathrm{nm}^{-2}\)</span></p></li>
+<li><p>spin density <span class="math notranslate nohighlight">\(\rho\)</span>: <span class="math notranslate nohighlight">\(\mathrm{nm}^{-3}\)</span></p></li>
+<li><p>magnetic moment <span class="math notranslate nohighlight">\(\mu_{\text{p}}\)</span> and <span class="math notranslate nohighlight">\(\mu_{\text{e}}\)</span>: <span class="math notranslate nohighlight">\(\mathrm{aN} \: \mathrm{nm} \: \mathrm{mT}^{-1}\)</span></p></li>
+</ul>
+<p>In these units, the electron gyromagnetic ratio <a class="footnote-reference brackets" href="#nistgammae" id="id1">1</a> is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\gamma_e &amp; = 1.760 859 708 \times 10^{11} \: \mathrm{s}^{-1} \: \mathrm{T}^{-1} \\
+         &amp; = 1.760 859 708 \times 10^{8} \: \mathrm{s}^{-1} \: \mathrm{mT}^{-1},\end{split}\]</div>
+<p>the electron magnetic moment <a class="footnote-reference brackets" href="#nistmue" id="id2">3</a> is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mu_e &amp; = -928.476 430 \times 10^{-26} \: \mathrm{J} \: \mathrm{T}^{-1} \\
+      &amp; = -9.28 \: \mathrm{aN} \: \mathrm{nm} \: \mathrm{mT}^{-1},\end{split}\]</div>
+<p>the proton gyromagnetic ratio <a class="footnote-reference brackets" href="#nistgammap" id="id3">2</a> is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\gamma_p &amp; = 2.675 222 005 \times 10^{8} \: \mathrm{s}^{-1} \: \mathrm{T}^{-1} \\
+         &amp; = 2.675 222 005 \times 10^{5} \: \mathrm{s}^{-1} \: \mathrm{mT}^{-1},\end{split}\]</div>
+<p>and the proton magnetic moment is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mu_p &amp;= 1.410 606 743 \times 10^{-26} \: \mathrm{J} \: \mathrm{T}^{-1} \\
+      &amp;= 0.0141 \: \mathrm{aN} \: \mathrm{nm} \: \mathrm{mT}^{-1}.\end{split}\]</div>
+<p>The gyromagnetic ratios were taken from the NIST database and do not account for any chemical shift corrections.  It is pleasing to find that in our units system the electron and proton magnetic moments come out to be numbers of order one!</p>
+<p>In the calculations below, we will need the following two physical constants.  In terms of our practical units,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\hbar &amp;= \text{Planck's constant divided by } 2 \pi \\
+      &amp;= 1.054571628 \times 10^{-34} \: \mathrm{J} \: \mathrm{s} \\
+      &amp;= 1.054571628 \times 10^{-7} \: \mathrm{aN} \: \mathrm{nm} \: \mathrm{s} \\
+k_b &amp;= \text{Boltzmann's constant} \\
+    &amp;= 1.3806504 \times 10^{-23} \: \mathrm{J} \: \mathrm{K}^{-1} \\
+    &amp;= 1.3806504 \times 10^{4} \: \mathrm{aN} \: \mathrm{nm} \: \mathrm{K}^{-1}\end{split}\]</div>
+<p><strong>References</strong></p>
+<dl class="footnote brackets">
+<dt class="label" id="nistgammae"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="http://physics.nist.gov/cgi-bin/cuu/Value?gammae">http://physics.nist.gov/cgi-bin/cuu/Value?gammae</a></p>
+</dd>
+<dt class="label" id="nistgammap"><span class="brackets"><a class="fn-backref" href="#id3">2</a></span></dt>
+<dd><p><a class="reference external" href="http://physics.nist.gov/cgi-bin/cuu/Value?gammap">http://physics.nist.gov/cgi-bin/cuu/Value?gammap</a></p>
+</dd>
+<dt class="label" id="nistmue"><span class="brackets"><a class="fn-backref" href="#id2">3</a></span></dt>
+<dd><p><a class="reference external" href="http://physics.nist.gov/cgi-bin/cuu/Value?muem">http://physics.nist.gov/cgi-bin/cuu/Value?muem</a></p>
+</dd>
+<dt class="label" id="nistmup"><span class="brackets">4</span></dt>
+<dd><p><a class="reference external" href="http://physics.nist.gov/cgi-bin/cuu/Value?mup">http://physics.nist.gov/cgi-bin/cuu/Value?mup</a></p>
+</dd>
+</dl>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="simulation.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Trapezoid Integration</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="develop.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Development notes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Peter Sun, John A. Marohn, Corinne Isaac<br/>
+  
+      &copy; Copyright 2023, Peter Sun, John A. Marohn.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

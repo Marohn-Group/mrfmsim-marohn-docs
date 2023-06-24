@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mrfmsim_marohn.formula.magnetization &#8212; MrfmSim-Marohn 0.1.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">MrfmSim-Marohn 0.1.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting Started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../readme.html">
+   MrfmSim-Marohn
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Experimental Setup
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../component/sample.html">
+   Sample
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../component/grid.html">
+   Grid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../component/magnet.html">
+   Magnet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../component/cantilever.html">
+   Cantilever
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Theory and Experiments
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../theory.html">
+   Theory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../experiment.html">
+   Experiment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../simulation.html">
+   Trapezoid Integration
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Units
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../units.html">
+   Units
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../develop.html">
+   Development notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../tests.html">
+   Tests
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../license.html">
+   License
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../acknowlegements.html">
+   Acknowledgements
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1></h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <h1>Source code for mrfmsim_marohn.formula.magnetization</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">numba</span> <span class="k">as</span> <span class="nn">nb</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">HBAR</span> <span class="o">=</span> <span class="mf">1.054571628e-7</span>  <span class="c1"># aN nm s - reduced Planck constant</span>
+<span class="n">KB</span> <span class="o">=</span> <span class="mf">1.3806504e4</span>  <span class="c1"># aN nm K^{-1} - Boltzmann constant</span>
+
+<div class="viewcode-block" id="mz_eq"><a class="viewcode-back" href="../../../theory.html#mrfmsim_marohn.formula.magnetization.mz_eq">[docs]</a><span class="nd">@nb</span><span class="o">.</span><span class="n">jit</span><span class="p">(</span><span class="n">nopython</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">parallel</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">mz_eq</span><span class="p">(</span><span class="n">B_tot</span><span class="p">,</span> <span class="n">Gamma</span><span class="p">,</span> <span class="n">J</span><span class="p">,</span> <span class="n">temperature</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Magnetization per spin at the thermal equilibrium using the Brillouin function.</span>
+
+<span class="sd">    :param float gamma: the gyromagnetic ratio. [rad/s.mT]</span>
+<span class="sd">    :param float j: total spin angular momentum</span>
+<span class="sd">    :param float temperature: the spin temperature [K]</span>
+<span class="sd">    :param float spin_density: the sample spin</span>
+<span class="sd">            density :math:`\rho` [1/nm^3]</span>
+<span class="sd">    :param float b0: the external magnetic field [mT]</span>
+<span class="sd">    :param float bz: tip magnetic field in z [mT]</span>
+<span class="sd">    :return: equilibrium per-spin magnetization [aN.nm/mT]</span>
+
+<span class="sd">    The outputs are calculated from the sample properties</span>
+
+<span class="sd">    .. math::</span>
+<span class="sd">        J &amp;= \text{spin angular momentum quantum number}\:</span>
+<span class="sd">            [\mathrm{unitless}]\\</span>
+<span class="sd">        \gamma &amp; = \text{gyromagnetic ratio} \:</span>
+<span class="sd">        [\mathrm{s}^{-1} \mathrm{mT}^{-1}] \\</span>
+<span class="sd">        B_0 &amp;= \text{applied magnetic field} \: [\mathrm{mT}] \\</span>
+<span class="sd">        T &amp;= \text{temperature} \: [\mathrm{K}] \\</span>
+<span class="sd">        \rho &amp;= \text{spin density} \: [\mathrm{nm}^{-1}]</span>
+
+<span class="sd">    as follows. From the sample properties, we compute the magnetic moment</span>
+<span class="sd">    :math:`\mu` of the state with the largest :math:`m_J` quantum number,</span>
+
+<span class="sd">    .. math::</span>
+<span class="sd">        \mu = \hbar\gamma J \: [\mathrm{aN} \: \mathrm{nm} \:</span>
+<span class="sd">        \mathrm{mT}^{-1}]</span>
+
+<span class="sd">    We calculate the ratio of the energy level splitting of spin states to</span>
+<span class="sd">    the thermal energy,</span>
+
+<span class="sd">    .. math::</span>
+<span class="sd">        x = \dfrac{\mu B_0}{k_b T} \: [\mathrm{unitless}],</span>
+
+<span class="sd">    and define the following two unitless numbers:</span>
+
+<span class="sd">    .. math::</span>
+<span class="sd">        a &amp;= \dfrac{2 \: J + 1}{2 \: J} \\</span>
+<span class="sd">        b &amp;= \dfrac{1}{2 \: J}</span>
+
+<span class="sd">    In terms of these intermediate quantities, the thermal-equilibrium</span>
+<span class="sd">    polarization is given by</span>
+
+<span class="sd">    .. math::</span>
+<span class="sd">        p_{\text{eq}} = a \coth{(a x)} - b \coth{(b x)}</span>
+<span class="sd">            \: [\mathrm{unitless}].</span>
+
+<span class="sd">    The equilibrium magnetization is given by</span>
+
+<span class="sd">    .. math::</span>
+<span class="sd">        {\cal M}_{z}^{\text{eq}} =</span>
+<span class="sd">            p_{\text{eq}} \: \mu \:</span>
+<span class="sd">            [\mathrm{aN} \: \mathrm{nm} \: \mathrm{mT}^{-1}].</span>
+
+<span class="sd">    In the limit of low field or high temperature,</span>
+<span class="sd">    the equilibrium magnetization</span>
+<span class="sd">    tends towards the Curie-Weiss law,</span>
+
+<span class="sd">    .. math::</span>
+<span class="sd">        {\cal M}_{z}^{\text{eq}}</span>
+<span class="sd">        \approx \dfrac{\hbar^2 \gamma^2 \: J (J + 1)}{3 \: k_b T} B_0</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">mu_z</span> <span class="o">=</span> <span class="n">HBAR</span> <span class="o">*</span> <span class="n">Gamma</span> <span class="o">*</span> <span class="n">J</span>  <span class="c1"># aN nm s * rad/s mT = aN nm/mT</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">mu_z</span> <span class="o">*</span> <span class="n">B_tot</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">KB</span> <span class="o">*</span> <span class="n">temperature</span><span class="p">)</span>  <span class="c1"># unitless</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">J</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">J</span><span class="p">)</span>  <span class="c1"># unitless</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">J</span><span class="p">)</span>  <span class="c1"># unitless</span>
+    <span class="n">pol_eq</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">mu_z</span> <span class="o">*</span> <span class="n">pol_eq</span>   <span class="c1"># [aN.nm/mT]</span></div>
+
+<div class="viewcode-block" id="mz2_eq"><a class="viewcode-back" href="../../../theory.html#mrfmsim_marohn.formula.magnetization.mz2_eq">[docs]</a><span class="k">def</span> <span class="nf">mz2_eq</span><span class="p">(</span><span class="n">Gamma</span><span class="p">,</span> <span class="n">J</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compute the magnetization variance per spin.</span>
+
+<span class="sd">    :param float gamma: the gyromagnetic ratio. [rad/s.mT]</span>
+<span class="sd">    :param float J: total spin angular momentum</span>
+<span class="sd">    :return: Mz2_eq, rhoMz_eq</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">mu</span> <span class="o">=</span> <span class="n">HBAR</span> <span class="o">*</span> <span class="n">Gamma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">J</span> <span class="o">*</span> <span class="p">(</span><span class="n">J</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">)</span>  <span class="c1"># aN.nm/mT</span>
+    <span class="k">return</span> <span class="n">mu</span> <span class="o">**</span> <span class="mi">2</span>  <span class="c1"># aN^2</span></div>
+</pre></div>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Peter Sun, John A. Marohn, Corinne Isaac<br/>
+  
+      &copy; Copyright 2023, Peter Sun, John A. Marohn.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
